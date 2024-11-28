@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Field Mockup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+
+  <body>
+    <!-- style="display: none;" -->
+    <h1>Football Formation</h1>
+    <section>
+      
+      <div class="field relative">
+        <!-- <img src="assets/field.jpg" class="img_field"/> -->
+      
+        <!-- Goalkeeper -->
+        <div class="position-container" id="cardlid1" style="top: 85%; left: 50%; transform: translate(-50%, -50%);">
+            <!-- <img src="assets/badge.jpg" alt="Badge" class="badge-image" /> -->
+            <div class="position" data-position="GK" draggable="true"></div>
+          <p class="position-name">GK</p>
+        </div>
+      
+        <!-- Defenders -->
+        <div class="position-container" id="cradlid2" style="top: 70%; left: 20%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="LB" draggable="true"></div>
+          <p class="position-name">LB</p>
+        </div>
+        <div class="position-container" id="cradlid3" style="top: 70%; left: 40%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="CB" draggable="true"></div>
+          <p class="position-name">CB</p>
+        </div>
+        <div class="position-container" id="cradlid4" style="top: 70%; left: 60%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="CB" draggable="true"></div>
+          <p class="position-name">CB</p>
+        </div>
+        <div class="position-container" id="cradlid5" style="top: 70%; left: 80%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="RB" draggable="true"></div>
+          <p class="position-name">RB</p>
+        </div>
+      
+        <!-- Midfielders -->
+        <div class="position-container" id="cradlid6" style="top: 50%; left: 30%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="CM" draggable="true"></div>
+          <p class="position-name">CM</p>
+        </div>
+        <div class="position-container" id="cradlid7" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="CM" draggable="true"></div>
+          <p class="position-name">CM</p>
+        </div>
+        <div class="position-container" id="cradlid8" style="top: 50%; left: 70%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="CM" draggable="true"></div>
+          <p class="position-name">CM</p>
+        </div>
+      
+        <!-- Forwards -->
+        <div class="position-container" id="cradlid9" style="top: 30%; left: 30%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="LW" draggable="true"></div>
+          <p class="position-name">LW</p>
+        </div>
+        <div class="position-container" id="cradlid10" style="top: 30%; left: 50%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="ST" draggable="true"></div>
+          <p class="position-name">ST</p>
+        </div>
+        <div class="position-container" id="cradlid11" style="top: 30%; left: 70%; transform: translate(-50%, -50%);">
+          <div class="position" data-position="RW" draggable="true"></div>
+          <p class="position-name">RW</p>
+        </div>
+      </div>
+      
+    <div>
+      <div id="replacement-pool" class="replacement-pool">
+        <h3>Replacement Players</h3>
+        <div class="replacement-players"></div>
+      </div>
+
+      <div id="player-selection" class="hidden">
+        <h2>Select a Player</h2>
+        <ul id="player-list"></ul>
+      </div>
+
+      <div>
+        <button onclick="addplayer(this)"> Add player </button>
+      </div>
+
+
+    </div>
+
+
+
+    </section>
+    <script src="script1.js"></script>
+  </body>
+</html>
